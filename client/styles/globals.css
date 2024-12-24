@@ -1,0 +1,84 @@
+/* styles/globals.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set the background color */
+    color: white; /* Default text color for contrast */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  html, body, #__next {
+    height: 100%;
+  }
+
+
+  .table-container {
+    overflow-x: auto;
+    margin: 5px 0;
+  }
+  
+  .styled-table {
+    background-color: #1E3A8A;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 10px 10px;
+  }
+  
+  .styled-table thead tr {
+    background-color: #1E3A8A;
+    color: #E0E7FF;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #E0E7FF;
+  }
+  
+  .styled-table tbody tr {
+    border-bottom: 1px solid #E0E7FF;
+  }
+  
+  
+  .styled-table tbody tr:hover {
+    background-color:#E0E7FF;
+    color: black
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 768px) {
+    .styled-table th,
+    .styled-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  /** Styling buttons */
+  .custom-btn{
+    background-color: #1E3A8A;
+    color: #E0E7FF;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .custom-btn:hover {
+    background-color: #2563EB; /* Slightly lighter shade of blue */
+    color: #FFFFFF; /* White text for better contrast */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    transition-duration: 1s; /* Smooth animation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
