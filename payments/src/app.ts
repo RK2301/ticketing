@@ -12,7 +12,7 @@ app.set("trust proxy", true);
 app.use(json())
 app.use(CookieSession({
     signed: false,
-    secure: true
+    secure: false
 }))
 
 app.use(currentUser)
