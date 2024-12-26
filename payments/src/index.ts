@@ -25,7 +25,7 @@ const start = async () => {
     try {
         //connect to MongoDB
         await mongoose.connect(process.env.MONGO_URI)
-        console.log('Connected to MongoDB');
+        console.log('Connected to MongoDB ', process.env.MONGO_URI);
 
         //connect to NATS
         await natsWrapper.connect(
