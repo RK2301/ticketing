@@ -22,7 +22,7 @@ const LandingPage = ({ currentUser, tickets }) => {
         <div className="container mt-5 mt-md-3">
             <div className="row justify-content-center">
                 <div className="col-md-8">
-                    <h1>Tickets</h1>
+                    <h2>Tickets</h2>
                 </div>
             </div>
 

@@ -35,7 +35,7 @@ const start = async () => {
 
     //make connect to mongoose db
     await mongoose.connect(process.env.MONOGO_URI);
-    console.log(`Connected To MongoDB`);
+    console.log(`Connected To MongoDB ${process.env.MONOGO_URI}`);
 
     new OrderCreatedListener(natsWrapper.client).listen()
     new OrderCancelledListener(natsWrapper.client).listen()
