@@ -16,7 +16,7 @@ app.set("trust proxy", true);
 app.use(json());
 app.use(
   CookieSession({
-    secure: true,
+    secure: false,
     signed: false,
   })
 );
