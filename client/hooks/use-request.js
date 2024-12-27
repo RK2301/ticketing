@@ -13,7 +13,7 @@ const useRequest = ({ url, method, body, onSuccess }) => {
                 onSuccess(res.data)
         } catch (err) {
             console.log('Error: ');
-            console.error(err.response?.data);
+            console.error(err);
             //return JSX blocks with errors
             setErrors(
                 <div className='alert alert-danger mt-1'>
