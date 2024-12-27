@@ -12,11 +12,13 @@ const useRequest = ({ url, method, body, onSuccess }) => {
             if (onSuccess)
                 onSuccess(res.data)
         } catch (err) {
+            console.log('Error: ');
+            console.error(err.response?.data);
             //return JSX blocks with errors
             setErrors(
                 <div className='alert alert-danger mt-1'>
                     <ul className='my-0'>
-                        {err.response?.data.errors.map(err => <li key={err.message}> {err.message} </li>)}
+                        {err.response?.data.errors?.map(err => <li key={err.message}> {err.message} </li>)}
                     </ul>
                 </div>
             )
