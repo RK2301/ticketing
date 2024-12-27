@@ -2,10 +2,15 @@ import 'bootstrap/dist/css/bootstrap.css'
 import buildClient from "../api/build-client";
 import Header from '../components/header';
 import '../styles/globals.css'
+import Head from 'next/head'
 
 const AppComponent = ({ Component, pageProps, currentUser }) => {
     return (
         <div>
+            <Head>
+                <title>Ticketing</title>
+                <link rel="icon" href="/ticketingLogo.png" />
+            </Head>
             <Header currentUser={currentUser} />
             <Component currentUser={currentUser} {...pageProps} />
         </div>
