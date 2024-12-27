@@ -22,12 +22,12 @@ const Header = ({ currentUser }) => {
                     <h4> GitTix </h4>
                 </Link>
                 <div className='d-flex justify-content-end'>
-                    <ul className='nav d-flex align-items-center'>
+                    <ul className='nav d-flex align-items-center '>
                         {links}
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav >
     )
 }
 
