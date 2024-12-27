@@ -16,12 +16,11 @@ const Header = ({ currentUser }) => {
             </li>
         ))
     return (
-        <nav className="navbar" style={{ backgroundColor: '#1E3A8A' }}>
+        <nav className="navbar p-1" style={{ backgroundColor: '#1E3A8A' }}>
             <div className='container-fluid'>
                 <Link className="navbar-brand" href="/" style={{ color: '#E0E7FF' }}>
                     <h4> GitTix </h4>
                 </Link>
-
                 <div className='d-flex justify-content-end'>
                     <ul className='nav d-flex align-items-center'>
                         {links}
