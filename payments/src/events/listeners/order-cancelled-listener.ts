@@ -18,7 +18,8 @@ export class OrderCancelledListener extends Listener<OrderCancelledEvent> {
             version: data.version - 1
         })
 
-        if (!order) throw new Error('Order Not Found')
+        if (!order) //throw new Error('Order Not Found')
+            return msg.ack()
 
         //updates status of the order
         order.set({
